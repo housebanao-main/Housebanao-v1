@@ -29,3 +29,4 @@ client/node_modules/@next/swc-darwin-x64/next-swc.darwin-x64.node
 
 # Ignore large files
 client/node_modules/@next/swc-darwin-x64/next-swc.darwin-x64.node
+.next

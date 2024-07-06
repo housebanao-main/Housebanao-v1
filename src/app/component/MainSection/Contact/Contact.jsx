@@ -1,11 +1,16 @@
-'use client';
-import React from 'react';
+// components/MainSection/Contact.jsx
+import React, { useEffect } from 'react';
 import { SubmitButton } from '../../Button/SubmitButton';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faPhone, faBuilding } from '@fortawesome/free-solid-svg-icons';
 
 const Contact = () => {
+  useEffect(() => {
+    // This useEffect hook will only run on the client-side
+    console.log('Component has mounted on the client side');
+  }, []);
+
   return (
     <div className='bg-[#FAF7F6] min-h-screen p-4 md:p-10'>
       <div className="flex flex-wrap justify-center">
@@ -68,6 +73,7 @@ const Contact = () => {
         {/* Right Side Boxes */}
         <div className="w-full md:w-[550px] flex flex-col justify-between space-y-4 mx-4">
           <div className="bg-white w-full h-[200px] md:h-[475px] rounded-lg mb-4">
+            {/* Note: Ensure any browser-specific elements are conditionally rendered */}
             <img src="/assets/images/contact.png" alt="Your Image" className="object-cover w-full h-full rounded-md" />
           </div>
           <div className="bg-white w-full h-auto md:h-[300px] rounded-lg p-4 flex flex-col justify-center space-y-6">
