@@ -1,7 +1,6 @@
 import { CollabsSection } from "./component/MainSection/CollabrationSection/CollabsSection";
 import { ConstructionSection } from "./component/MainSection/ConstructionSection/ConstructionSection";
 import { Faqs } from "./component/MainSection/FAQs/Faqs";
-
 import { GlimpseSection } from "./component/MainSection/GlimpseSection/GlimpseSection";
 import { HeroSection } from "./component/MainSection/HeroSection";
 import { InteriorSection } from "./component/MainSection/InteriorSection/InteriorSection";
@@ -18,15 +17,10 @@ export default function Home() {
        <ConstructionSection />
        <InteriorSection  />
        <Services  />
-       
        <Packages />
        <GlimpseSection />
-       
        <TableSection />
-
-         <Projects />
-   
-     
+       <Projects />
        <Faqs  />
        <CollabsSection />
     </main>

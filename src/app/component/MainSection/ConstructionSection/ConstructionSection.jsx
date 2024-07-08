@@ -51,7 +51,7 @@ export const ConstructionSection = () => {
             className="py-6 lg:mx-auto"
           >
             {data.map((item, index) => (
-              <div className="flex flex-col border-[2px] h-auto shadow-lg rounded-[15px] mb-[20px] w-[95%]" key={index}>
+              <div className="flex flex-col border-[1px] h-auto rounded-[20px] cursor-pointer mb-[20px] w-[95%]" key={index}>
                 <Image
                   src={item.icon}
                   alt={item.subHeading}

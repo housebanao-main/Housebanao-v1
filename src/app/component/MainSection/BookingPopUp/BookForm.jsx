@@ -7,7 +7,7 @@ import { SubHeading } from "../../SubHeading/SubHeading";
 import { CustomField } from "../../Utils/CustomField/CustomField";
 import { SubmitButton } from "../../Button/SubmitButton";
 import Image from "next/image";
-import logo from "../../../../../public/assets/images/logo.svg";
+// import logo from "../../../../../public/assets/images/logo.svg";
 
 export const BookForm = () => {
   const dispatch = useDispatch();
@@ -57,7 +57,6 @@ export const BookForm = () => {
   return (
     <section className="relative w-full lg:max-w-[450px] h-auto bg-white lg:rounded-[20px] flex flex-col shadow-md my-4 mx-auto mr-8 p-6 border">
       <div className="flex flex-col items-center">
-        <Image src={logo} alt="Company Logo" width={100} height={100} />
         <CommonHeading className="text-xl font-bold">
           Book your appointment
         </CommonHeading>

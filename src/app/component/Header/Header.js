@@ -36,7 +36,7 @@ export const Header = () => {
 
   return (
     <>
-      <header className="w-full top-0 sticky inset-x-0 z-[20] bg-white shadow-lg lg:max-h-[65px] h-[70px] items-center justify-center flex">
+   <header className="w-[99%] m-auto top-0 sticky inset-x-0 z-[20] bg-white shadow-lg lg:max-h-[65px] h-[100px] lg:w-full lg:h-[70px] items-center justify-center flex rounded-[20px] lg:rounded-none">
         <div className="lg:max-w-[1290px] w-full mx-auto flex items-center justify-between py-[10px]">
           <div className="flex items-center gap-[80px] relative">
             <Link href="/">
@@ -54,7 +54,7 @@ export const Header = () => {
               <nav className="lg:flex gap-[25px] text-regular">
                 {menus.slice(0, -1).map((menu, index) => (
                   <Link key={index} href={menu.link}>
-                    <span>{menu.name}</span>
+                    <span className="hover:text-gray-800 hover:underline cursor-pointer">{menu.name}</span>
                   </Link>
                 ))}
                 <Link href={menus[menus.length - 1].link} className={menus[menus.length - 1].className}>
@@ -71,7 +71,7 @@ export const Header = () => {
             />
           </div>
 
-          <div className={`${active ? "block" : "hidden"} absolute w-full bg-white top-full left-0 z-50 flex flex-col items-center gap-4 py-5`}>
+          <div className={`${active ? "block" : "hidden"} absolute w-full bg-white top-3/4 left-0 z-50 flex flex-col items-center gap-4 py-5`}>
             <FontAwesomeIcon
               icon={faClose}
               onClick={showMenu}
@@ -83,7 +83,7 @@ export const Header = () => {
               </Link>
             ))}
           </div>
-          <button className="hidden lg:flex w-fit h-[40px] rounded-[88px] mr-16 border-[0.5px] p-[14px] justify-between items-center bg-brown mb-0">
+          <button className="hidden lg:flex w-fit h-[40px] rounded-[88px] mr-12 border-[0.5px] p-[14px] justify-between items-center bg-brown mb-0">
             <span className="font-medium text-regular bg-brown text-white">
               Book Consultation now
             </span>

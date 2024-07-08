@@ -14,7 +14,7 @@ export const CustomField = ({
         htmlFor={labelTitle}
         className="text-[15px] leading-5 font-medium flex flex-col items-start justify-center lg:text-[15px] lg:leading-[22px]"
       >
-       <div className="gradient-background p-[1.5px] rounded-full border-[1px]   w-[337px] h-[47x]">
+       <div className="p-[1.5px] rounded-full border-[1px]   w-[337px] h-[48px]">
          <input
              type={FieldType}
              // name={FieldName}

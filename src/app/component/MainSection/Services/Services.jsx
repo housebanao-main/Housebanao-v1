@@ -35,12 +35,12 @@ export const Services = () => {
   const cardsContent = [
     {
       icon: faCalendarDays,
-      title: "Deliver in 45 days",
+      title: "Quick Delivery",
       backgroundColor: "#ECDAF2",
     },
     {
       icon: faPeopleGroup,
-      title: "500+ happy customer",
+      title: "Many happy customers",
       backgroundColor: "#FFEDDE",
     },
     {
@@ -69,11 +69,11 @@ export const Services = () => {
     <>
       <section className="bg-[#F7F7F7] lg:h-[380px] h-auto mb-[30px] mt-[25px] w-full flex justify-center items-center pt-[20px] pb-[40px] flex-col">
         <CommonHeading className="mt-[10px]">Why choose us?</CommonHeading>
-        <div className="relative lg:max-w-[1290px] w-full mx-auto">
+        <div className="relative lg:max-w-[1290px] lg:w-[87%] w-[100%] mx-auto">
           <CommonSlider
             slidesShow={slidesToShow}
             autoPlay={autoPlay}
-            autoPlayDelay={3000} // Change auto-play delay to 3000 milliseconds (3 seconds)
+            autoPlayDelay={8000} // Change auto-play delay to 5000 milliseconds (5 seconds)
             className="py-6 lg:mx-auto"
           >
             {cardsContent.map((card, index) => (

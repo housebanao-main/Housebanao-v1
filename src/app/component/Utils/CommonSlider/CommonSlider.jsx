@@ -40,7 +40,7 @@ export const CommonSlider = ({ children, className, slidesShow, autoPlay, autoPl
 };
 
 export const SliderButton = ({ sliderRef }) => {
-  const styles = "lg:w-[35px] lg:h-[35px] w-[30px] h-[30px] lg:block rounded-full shadow-md bg-gray-200 border-[2px] border-white text-gray-600 hover:border hover:border-black transition-colors lg:flex items-center justify-center absolute lg:top-[45%] top-[45%]";
+  const styles = "lg:w-[50px] lg:h-[50px] w-[50px] h-[50px] cursor-pointer lg:block rounded-full shadow-md bg-gray-200 border-[2px] border-white text-gray-600 hover:border hover:border-black transition-colors lg:flex items-center justify-center absolute lg:top-[40%] top-[40%]";
 
   return (
     <>
