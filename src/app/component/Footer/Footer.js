@@ -86,25 +86,22 @@ export const Footer = () => {
 const siteMapMenus = [
   { name: 'Services', link: '/service' },
   { name: 'Our Projects', link: '/ourprojects' },
-  { name: 'Packages', link: '/pack' },
+ 
   { name: 'How It Works', link: '/howitwork' },
-  { name: 'Floor Plans', link: '/floorplans' },
-  { name: 'Blog', link: '/blog' },
-  { name: 'Contact Us', link: '/contactus' },
+  
 ];
 
 const informationMenus = [
   { name: 'Terms & Conditions', link: '/terms' },
   { name: 'Privacy Policy', link: '/privacy' },
   { name: 'FAQs', link: '/faqss' },
-  { name: 'Cancellation Policy', link: '/cancellation' },
-  { name: 'Referral Policy', link: '/referral' },
+  
 ];
 
 const socialIcons = [
   { icon: faFacebookF, url: 'https://www.facebook.com/profile.php?id=61557081024259' },
   { icon: faInstagram, url: 'https://www.instagram.com/house_banao' },
-  { icon: faLinkedinIn, url: 'https://www.linkedin.com/company/housebanao/' },
+  { icon: faLinkedinIn, url: 'https://www.linkedin.com/company/housebanao2/' },
   { icon: faYoutube, url: 'https://www.youtube.com/@HouseBanaoo' },
   { icon: faPinterestP, url: 'https://in.pinterest.com/house_banao/' },
 ];
