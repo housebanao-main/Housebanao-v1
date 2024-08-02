@@ -90,13 +90,13 @@ export const LeadForm = () => {
           {/* <CommonButton onclick={openLink.bind('tel:+91 9810431883')}>Call Us</CommonButton> */}
           {/* <CommonButton onclick={openLink.bind('mailto:support@housebanao.com')}>Mail Us</CommonButton> */}
         <div className="flex flex-col gap-[15px] items-center mt-[18px]">
-          <a href="tel:+919810232124">
+          <a href="tel:+919810117643">
             <button className='rounded-full shadow-md py-[15px] px-[40px] text-white bg-[#A46254] text-[20px] leading-[10px] w-[200px]'>
               <FontAwesomeIcon icon={faPhoneAlt} className="mr-2" flip="horizontal" /> 
               Call
             </button>
           </a>
-          <a href="https://wa.me/+919810431883">
+          <a href="https://wa.me/+919810432124">
             <button className='rounded-full shadow-md py-[15px] px-[40px] text-white bg-[#A46254] text-[20px] leading-[10px] w-[200px] flex items-center justify-center'>
               <FontAwesomeIcon icon={faWhatsapp} className="mr-2" /> 
               WhatsApp
