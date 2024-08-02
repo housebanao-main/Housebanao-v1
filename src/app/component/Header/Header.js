@@ -15,10 +15,9 @@ export const Header = () => {
   const menus = [
     { name: "Service", link: "/service" },
     { name: "Our Projects", link: "/ourprojects" },
-    { name: "Packages", link: "/pack" },
+    
     { name: "How It Works", link: "/howitwork" },
-    { name: "Floor Plans", link: "/floorplans" },
-    { name: "Blog", link: "/blog" },
+    
     { name: "Contact Us", link: "/contactus", className: "ml-36" }  // Ensure this is the correct relative URL path for your project
   ];
 
