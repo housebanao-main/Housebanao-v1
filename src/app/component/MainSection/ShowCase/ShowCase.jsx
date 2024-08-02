@@ -13,7 +13,7 @@ const ShowCase = () => {
       img: show1,
       heading: 'Meet our expert',
       points: [
-        'Raise a house construction service request or call us at +91 7505 205 205. Our team will get in touch with you to understand your requirements in more detail.',
+        'Raise a house construction service request or call us at +91 9810432124. Our team will get in touch with you to understand your requirements in more detail.',
         'They will arrange the meeting with our technical expert.'
       ]
     },
