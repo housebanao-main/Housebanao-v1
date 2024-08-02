@@ -13,7 +13,7 @@ export const HeroSection = ({ altText }) => {
       <a href="https://api.whatsapp.com/send?phone=9810117643" target="_blank" rel="noopener noreferrer" className="cursor-pointer inline z-[20] fixed right-0 overflow-hidden bg-white px-[10px] py-[7px] rounded-l-[6px] shadow-xl flex items-center w-[55px] h-[55px] top-[118px]">
         <Image src={whatsappicon} alt='whatsapp' className='w-[34px]' />
       </a>
-      <a href="tel:+919810232124" className="cursor-pointer inline z-[20] fixed right-0 overflow-hidden bg-white px-[10px] py-[7px] rounded-l-[6px] shadow-xl flex items-center w-[55px] h-[55px] top-[180px]">
+      <a href="tel:+919810432124" className="cursor-pointer inline z-[20] fixed right-0 overflow-hidden bg-white px-[10px] py-[7px] rounded-l-[6px] shadow-xl flex items-center w-[55px] h-[55px] top-[180px]">
         <Image src={phoneNoicon} alt='contact' className='w-[26px]' />
       </a>
       <div className="absolute inset-0 flex flex-col lg:flex-row items-center justify-center w-full h-full px-4 lg:px-16">
