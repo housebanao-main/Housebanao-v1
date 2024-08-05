@@ -1,6 +1,6 @@
 import React from 'react';
 import { CommonHeading } from '../../Heading/CommonHeading';
-import glimpse01 from "../../../../../public/assets/images/glimpse01.png";
+import glimpse01 from "../../../../../public/assets/images/glimpse01.jpg";
 import glimpse02 from "../../../../../public/assets/images/glimpse02.png";
 import glimpse03 from "../../../../../public/assets/images/glimpse03.png";
 import Image from 'next/image';
