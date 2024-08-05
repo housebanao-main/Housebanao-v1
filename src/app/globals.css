@@ -25,7 +25,7 @@ body {
     )
     rgb(var(--background-start-rgb));
     font-family: 'Poppins', 'Arial', sans-serif;
-    background: black;
+    background: white;
 }
 
 @layer utilities {
