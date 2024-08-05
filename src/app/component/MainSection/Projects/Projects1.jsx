@@ -1,30 +1,22 @@
-import React from "react";
-import { CommonHeading } from "../../Heading/CommonHeading";
-import Image from "next/image";
-import House1 from "../../../../../public/assets/images/House1.jpg";
-import House2 from "../../../../../public/assets/images/House2.jpg";
-import House3 from "../../../../../public/assets/images/House3.jpeg";
-import SquareIcon from "../../../../../public/assets/images/apartment.png";
-import TriangleIcon from "../../../../../public/assets/images/floor.png";
-import HouseIcon from "../../../../../public/assets/images/building.png";
-import { SubHeading } from "../../SubHeading/SubHeading";
-
 export const Projects = () => {
   const data = [
     {
       image: House1,
       HNO: "CNR11011",
       address: "62, 2nd Cross, Gurgaon, Delhi",
+      area: "2956 sq.ft." // Updated area for the first project
     },
     {
       image: House2,
       HNO: "CNR11012",
       address: "63, 3rd Cross, Gurgaon, Delhi",
+      area: "3064 sq.ft." // Updated area for the second project
     },
     {
       image: House3,
       HNO: "CNR11013",
       address: "64, 4th Cross, Gurgaon, Delhi",
+      area: "3946 sq.ft." // Updated area for the third project
     },
   ];
 
@@ -66,12 +58,13 @@ export const Projects = () => {
                       className="mb-1 filter invert group-hover:invert-0 transition duration-300 ease-in-out"
                     />
                     <p className="text-black text-[10px] group-hover:text-white transition duration-300 ease-in-out">
-                      3964 sq.ft.
+                      {item.area} // Area is dynamically displayed
                     </p>
                     <p className="text-black text-[10px] group-hover:text-white transition duration-300 ease-in-out">
                       Area
                     </p>
                   </div>
+                  {/* Other icons and their labels remain unchanged */}
                   <div className="flex flex-col items-center">
                     <Image
                       src={TriangleIcon}
@@ -108,7 +101,6 @@ export const Projects = () => {
           </div>
         ))}
       </div>
-      {/* Add margin or padding to create space below the Projects section */}
       <div className="mt-8"></div>
     </div>
   );
