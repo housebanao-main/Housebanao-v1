@@ -1,20 +1,14 @@
 import React from 'react';
 
-export const HeroSectionButton = ({ title, onclick = () => {} }) => {
-  const handleClick = () => {
-    if (onclick) {
-      onclick();
-    }
-  };
-
+export const HeroSectionButton = ({ title, onClick = () => {} }) => {
   return (
-    <>
-      <button
-        className='bg-transparent rounded-full py-[5px] px-[6px] lg:py-[7px] lg:px-[10px] border-[1px] border-black text-sm lg:text-base'
-        onClick={handleClick}
-      >
-        {title}
-      </button>
-    </>
+    <button
+      className='bg-transparent rounded-full py-1 px-2 text-xs md:text-sm lg:text-base whitespace-nowrap border-[1px] border-black'
+      onClick={onClick}
+    >
+      {title}
+    </button>
   );
 };
+
+export default HeroSectionButton;
