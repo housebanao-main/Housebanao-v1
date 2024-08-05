@@ -2,20 +2,20 @@ export const Projects = () => {
   const data = [
     {
       image: House1,
-      HNO: "CNR11011",
-      address: "62, 2nd Cross, Gurgaon, Delhi",
+      HNO: "C-2",
+      address: "Pitampura-110034",
       area: "2956 sq.ft." // Updated area for the first project
     },
     {
       image: House2,
-      HNO: "CNR11012",
-      address: "63, 3rd Cross, Gurgaon, Delhi",
+      HNO: "D-16",
+      address: "Rohini -110085",
       area: "3064 sq.ft." // Updated area for the second project
     },
     {
       image: House3,
-      HNO: "CNR11013",
-      address: "64, 4th Cross, Gurgaon, Delhi",
+      HNO: "H-32",
+      address: "Rohini -110085",
       area: "3946 sq.ft." // Updated area for the third project
     },
   ];
