@@ -1,5 +1,3 @@
-// src/app/components/Footer/Footer.jsx
-
 import React from 'react';
 import { faFacebookF, faInstagram, faLinkedinIn, faYoutube, faPinterestP } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -29,7 +27,7 @@ export const Footer = () => {
           About us
         </div>
         <div className="grid lg:grid-cols-3 grid-cols-1 py-[20px] lg:gap-[40px] gap-[20px]">
-          <div className="flex flex-col gap-[20px] lg:ml-[40px]">
+          <div className="flex flex-col text-white lg:ml-[40px]">
             <span className="text-[15px] font-semibold text-white">Site Map</span>
             <div className="w-full flex flex-col mt-[10px]">
               <ul className="flex flex-col gap-[10px] w-[150px] text-[13px] text-white">
@@ -59,7 +57,7 @@ export const Footer = () => {
             <a href="mailto:invest@housebanao.com" className="text-white text-[13px]">support@housebanao.com</a>
             <div className="w-full mt-2 text-white text-[13px]">
               <p className="w-[200px]">
-                747B, 7th floor, JMD Megapolis Sector 48, Gurgaon, Haryana 122018
+                746A, 7th floor, JMD Megapolis Sector 48, Gurgaon, Haryana 122018
               </p>
             </div>
             <div className="flex gap-[20px] mt-4">
@@ -86,16 +84,13 @@ export const Footer = () => {
 const siteMapMenus = [
   { name: 'Services', link: '/service' },
   { name: 'Our Projects', link: '/ourprojects' },
- 
   { name: 'How It Works', link: '/howitwork' },
-  
 ];
 
 const informationMenus = [
   { name: 'Terms & Conditions', link: '/terms' },
   { name: 'Privacy Policy', link: '/privacy' },
   { name: 'FAQs', link: '/faqss' },
-  
 ];
 
 const socialIcons = [
