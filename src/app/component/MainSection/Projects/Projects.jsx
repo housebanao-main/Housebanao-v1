@@ -1,7 +1,7 @@
 import React from "react";
 import { CommonHeading } from "../../Heading/CommonHeading";
 import Image from "next/image";
-import House1 from "../../../../../public/assets/images/House1.jpeg";
+import House1 from "../../../../../public/assets/images/House1.jpg";
 import House2 from "../../../../../public/assets/images/House2.jpg";
 import House3 from "../../../../../public/assets/images/House3.jpeg";
 import SquareIcon from "../../../../../public/assets/images/apartment.png";
