@@ -12,7 +12,7 @@ const service = () => {
             <House />
             <OfferTwo />
             <CraftSection />
-            <Journey />
+            
             <Faqs />
          
         </div>
