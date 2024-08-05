@@ -13,29 +13,28 @@ export const Header = () => {
   const dispatch = useDispatch();
   const [active, setActive] = useState(false);
   const menus = [
+    
     { name: "Service", link: "/service" },
     { name: "Our Projects", link: "/ourprojects" },
-    
-    { name: "How It Works", link: "/howitwork" },
-    
+    { name: "How It Works", link: "/howitwork" },  
     
   ];
 
   const showMenu = () => setActive(!active);
 
-  const handleClick = () => {
+  const handleConsultationClick = () => {
     dispatch(
       toggleModal({
         screen: SCREENS.LEAD_POPUP,
         visible: true,
       })
     );
-    active && showMenu();
+    active && showMenu();  // This will close the mobile menu if it's open
   };
 
   return (
     <>
-   <header className="w-[99%] m-auto top-0 sticky inset-x-0 z-[20] bg-white shadow-lg lg:max-h-[65px] h-[100px] lg:w-full lg:h-[70px] items-center justify-center flex rounded-[20px] lg:rounded-none">
+      <header className="w-[99%] m-auto top-0 sticky inset-x-0 z-[20] bg-white shadow-lg lg:max-h-[65px] h-[100px] lg:w-full lg:h-[70px] items-center justify-center flex rounded-[20px] lg:rounded-none">
         <div className="lg:max-w-[1290px] w-full mx-auto flex items-center justify-between py-[10px]">
           <div className="flex items-center gap-[80px] relative">
             <Link href="/">
@@ -82,9 +81,10 @@ export const Header = () => {
               </Link>
             ))}
           </div>
-          <button className="hidden lg:flex w-fit h-[40px] rounded-[88px] mr-12 border-[0.5px] p-[14px] justify-between items-center bg-brown mb-0">
+          <button className="hidden lg:flex w-fit h-[40px] rounded-[88px] mr-12 border-[0.5px] p-[14px] justify-between items-center bg-brown mb-0"
+                  onClick={handleConsultationClick}>
             <span className="font-medium text-regular bg-brown text-white">
-              Book Consultation now
+              Book Consultation Now
             </span>
           </button>
         </div>
