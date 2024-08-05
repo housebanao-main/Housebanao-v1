@@ -48,7 +48,7 @@ export const TableSection = () => {
           </div>
           <div className='bg-[white] text-[#7C7C7C] py-[17px] border border-[#B1B1B1] rounded-md flex items-center'>
             <span className='ml-4'>Remote Monitoring</span>
-            <FontAwesomeIcon icon={faRegCheckCircle} className='text-[#7C7C7C] ml-auto mr-2' />
+            <FontAwesomeIcon icon={faRegTimesCircle} className='text-[#7C7C7C] ml-auto mr-2' />
           </div>
           <div className='bg-[white] text-[#7C7C7C] py-[17px] border border-[#B1B1B1] rounded-md flex items-center'>
             <span className='ml-4'>Cost keeps increasing</span>
