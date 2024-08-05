@@ -13,20 +13,20 @@ export const Projects = () => {
   const data = [
     {
       image: House1,
-      HNO: "C-2/113",
-      address: "West Enclave  , Pitampura-110034",
+      HNO: "C-2",
+      address: "Pitampura-110034",
       floors: "G + 1" 
     },
     {
       image: House2,
-      HNO: "D-16/117-118",
-      address: "Sector -3 Rohini -110085",
+      HNO: "D-16",
+      address: "Rohini -110085",
       floors: "G + 2" // Updated number of floors
     },
     {
       image: House3,
-      HNO: "H-32/88",
-      address: "sector -3 Rohini -110085",
+      HNO: "H-32",
+      address: "Rohini -110085",
       floors: "G + 3" // Updated number of floors
     },
   ];
