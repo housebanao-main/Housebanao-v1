@@ -8,37 +8,37 @@ export const Faqs = () => {
     const data = [
         {
             question: 'What services do you offer?',
-            answer: 'We offer comprehensive services in both construction and interior design. This includes end-to-end solutions from conceptual design to construction, along with customized interior design services for residential and commercial spaces.'
+            answer: 'At House Banao, we specialize in comprehensive house construction, residential design, and office interior design. Whether you’re building a new home, renovating your space, or designing a stylish office, we handle it all with precision and creativity. Our services include architectural planning, interior design, space optimization, and project management.',
         },
         {
             question: 'How much experience does your team have?',
-            answer: 'Our team comprises industry veterans with over a decade of experience in construction and design. Collectively, we bring a rich tapestry of expertise, ensuring quality and innovation in every project.'
+            answer: 'Our team boasts over 10 years of experience in the construction and design industry. We bring a wealth of knowledge and a track record of successful projects to ensure your vision is brought to life with expertise and care.',
         },
         {
             question: 'Can I see examples of your past work?',
-            answer: 'Certainly! You can view examples of our past projects on our website’s portfolio section or visit our office for a more personal showcase of our work.'
+            answer: 'Absolutely! We’re proud of our portfolio and would love to show you examples of our completed projects. You can explore our gallery on the website or request a personalized showcase during a consultation.',
         },
         {
             question: 'Do you offer consultations?',
-            answer: 'Yes, we offer free initial consultations to understand your requirements and discuss potential solutions tailored to your space and budget.'
+            answer: 'Yes, we offer free initial consultations to discuss your ideas and project needs. This helps us understand your vision and provide you with expert advice and a tailored plan.',
         },
         {
             question: 'What is your process for project development?',
-            answer: 'Our process begins with a client consultation, followed by site analysis, design conceptualization, budgeting, and project planning. Construction and quality checks ensue, culminating in a final walkthrough to ensure complete satisfaction.'
+            answer: 'Our process starts with understanding your goals through detailed consultations. We then move to architectural and interior designs, providing you with detailed drawings, front evaluation, 2D and 3D with comprehensive layouts. After this, we proceed to construction and execution. Throughout the project, we ensure constant communication and quality control to deliver exceptional results.',
         },
         {
             question: 'How long does a typical project take?',
-            answer: 'The duration of a project depends on its scope and complexity. A typical interior design project may take 2-4 months, while construction projects can range from 6 months to over a year.'
+            answer: 'The timeline of a typical project depends on its scope and complexity. On average, residential projects take 10-12 months from start to finish, while larger commercial projects might require additional time. Interior designing projects generally take about 2-4 months (Office/Residential Interior). We’ll provide a clear timeline after assessing your specific needs.',
         },
         {
-            question: 'What sets your company apart from others?',
-            answer: 'Our dedication to sustainability and luxury, coupled with an unyielding commitment to client satisfaction, sets us apart. We leverage the latest technologies and innovative materials to deliver exceptional quality and design.'
+            question: 'What makes your company special?',
+            answer: 'At House Banao, our entire team is committed to excellence, enabling us to offer end-to-end solutions to provide seamless, hassle-free experiences for our clients. We blend innovative design with practical solutions, ensuring that every project is unique and personalized as per your needs. Our dedication to quality and client satisfaction is evident in our thorough approach, including over 300 quality checks throughout each project.',
         },
     ];
 
     return (
         <section className='w-full h-auto bg-[#FAF7F6] p-[30px]' id='faqs'>
-            <CommonHeading className={'text-center'}>Frequently asked questions</CommonHeading>
+            <CommonHeading className={'text-center'}>Frequently Asked Questions</CommonHeading>
             <Accordion data={data} />
         </section>
     );
