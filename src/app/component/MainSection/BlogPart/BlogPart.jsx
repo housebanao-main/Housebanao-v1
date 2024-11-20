@@ -7,19 +7,19 @@ const blogs = [
     imageSrc: '/assets/images/Homeblog1.png',
     date: '01 June, 2024',
     title: 'New Home Construction | Build Your Perfect Home',
-    slug: 'new-home-construction-build-your-perfect-home' // Updated slug for better SEO
+    slug: 'new-home-construction-build-your-perfect-home' 
   },
   {
     imageSrc: '/assets/images/Homeblog2.png',
     date: '02 June, 2024',
     title: 'Finding the Best Construction Company in Gurgaon: A Complete Guide',
-    slug: 'finding-best-construction-company-gurgaon-complete-guide' // Updated slug
+    slug: 'finding-best-construction-company-gurgaon-complete-guide' 
   },
   {
     imageSrc: '/assets/images/Homeblog3.png',
     date: '03 June, 2024',
     title: 'Home Interior Design, Interior Design Services, House Interior Design',
-    slug: 'home-interior-design-services-house-interior-design' // Updated slug
+    slug: 'home-interior-design-services-house-interior-design' 
   }
 ];
 
