@@ -25,7 +25,7 @@ const blogs = [
 
 
 const BlogB = ({ imageSrc, date, title, slug }) => (
-  <Link href={`/blog/blogging/${slug}`}>
+  <Link href={`/blog/${slug}`}>
     <div className="flex flex-col mb-6 w-full ml-2 cursor-pointer">
       <Image
         src={imageSrc}
