@@ -2,9 +2,12 @@
 import React, { useState, useEffect } from 'react';
 import { CommonButton } from '../Button/CommonButton';
 import { HeroSectionButton } from '../Button/HeroSectionButton';
+import { useDispatch } from 'react-redux'; // Importing useDispatch
+import { toggleModal } from '../../store/slice/slice'; // Importing the action
 
 export const HeroSectionContent = () => {
   const [index, setIndex] = useState(0);
+  const dispatch = useDispatch(); // Initialize useDispatch
   const titles = ['Ideal Design', 'Interior Design', 'Structure'];
 
   useEffect(() => {
@@ -13,6 +16,16 @@ export const HeroSectionContent = () => {
     }, 3000); // Change text every 3 seconds
     return () => clearInterval(interval);
   }, []);
+
+  // Function to handle button click
+  const handleButtonClick = () => {
+    dispatch(
+      toggleModal({
+        visible: true,
+        screen: "lead_popup", // Trigger LeadForm screen
+      })
+    );
+  };
 
   return (
     <section className='relative flex-grow lg:flex lg:items-start lg:justify-start w-full lg:text-left text-center'>
@@ -40,7 +53,8 @@ export const HeroSectionContent = () => {
         <p className='text-black mb-10 text-[18px] leading-[24px] font-medium'>
           Hassle free Interiors and Construction from start to finish.
         </p>
-        <CommonButton>Start your construction</CommonButton>
+        {/* Updated the onClick handler */}
+        <CommonButton onClick={handleButtonClick}>Start your construction</CommonButton>
         <div className='flex justify-center lg:justify-start gap-4 mt-4'>
           <span className='text-black text-[16px] mt-2'>Popular:</span>
           <HeroSectionButton title='Interior designing' />
