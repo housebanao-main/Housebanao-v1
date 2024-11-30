@@ -1,0 +1,16 @@
+# Robots.txt for https://www.housebanao.com/
+
+# Allow all crawlers to access everything except the /admin/ and /private/ directories
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /user-data/
+
+# Allow specific pages (important landing pages) even if they are in a disallowed directory
+Allow: /about-us/
+Allow: /ourprojects/
+Allow: /service/
+Allow: /howitworks/
+
+# Sitemap location
+Sitemap: https://www.housebanao.com/sitemap.xml
