@@ -5,9 +5,12 @@ import { toggleModal } from '../store/slice/slice';
 import { SCREENS } from '../component/Utils/CustomModal/Modal';
 import { Header } from '../component/Header/Header';
 import { Footer } from '../component/Footer/Footer';
+// import { useRouter, Router } from 'next/router';
 
 export const Wrapper = ({children}) => {
     const dispatch = useDispatch();
+  const pathname= window.location.pathname;
+
 
 const openLeadPopup = () => {
   dispatch(toggleModal({
@@ -22,10 +25,12 @@ useEffect(() => {
     }, 5000);
 }, []);
   return (
-    <>
-    <Header />
+    // <Router>
+<>
+  {  pathname !== '/landing' && <Header />}
     {children}
   <Footer/>
   </>
+  // </Router>
   )
 }

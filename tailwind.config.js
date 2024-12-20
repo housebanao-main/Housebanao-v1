@@ -18,6 +18,7 @@ module.exports = {
       colors: {
         brown: '#A46254',
         pink: '#FFC0CB',
+        primary: "#A46254",
       },
     },
   },
