@@ -39,6 +39,9 @@ export default function Modal() {
 
   }, [visible]);
 
+  if(path=="/interior-design"){
+    return null;
+  }
   return visible ? (
     <main className={` ${bgColor} transition-all fixed inset-0 bg-black z-50 flex duration-500 items-center justify-center `}>
       {(() => {
