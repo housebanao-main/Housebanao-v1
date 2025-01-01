@@ -8,6 +8,7 @@ import { Header } from "./component/Header/Header";
 import { Footer } from "./component/Footer/Footer";
 import UiProvider from "./store/UiProvider";
 import { Wrapper } from "./Wrapper/Wrapper";
+import { PopupProvider } from "./context/PopupContext";
 
 // const inter = Inter({ subsets: ["latin"] });
 const poppinsFont = Poppins({
@@ -65,7 +66,9 @@ export default function RootLayout({ children }) {
           ></iframe>
         </noscript>
         <UiProvider>
+        <PopupProvider>
           <Wrapper>{children}</Wrapper>
+        </PopupProvider>
         </UiProvider>
       </body>
     </html>
