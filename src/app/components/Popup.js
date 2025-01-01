@@ -55,7 +55,7 @@ const Popup = () => {
     setSuccessMessage("");
 
     try {
-      const response = await axios.post("/api/send-email", formData);
+      const response = await axios.post("/interior-design/send-email", formData);
       if (response.status === 200) {
         setSuccessMessage("Your estimate request has been submitted successfully!");
         setFormData({ name: "", phoneNumber: "", plotLocation: "" }); // Reset form

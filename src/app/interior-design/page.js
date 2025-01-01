@@ -18,7 +18,7 @@ import './globals.css'; // Corrected import statement
 
 export default function IndexPage() {
   const { isPopupVisible, openPopup } = usePopup();
-  console.log("------", isPopupVisible, openPopup);
+  // console.log("------", isPopupVisible, openPopup);
 
   return (
 
@@ -51,7 +51,7 @@ export default function IndexPage() {
       <Footer />
 
       {/* Popup - Conditional Rendering */}
-      {/* {isPopupVisible && <Popup />} */}
+      {isPopupVisible && <Popup />}
     </div>
   );
 }

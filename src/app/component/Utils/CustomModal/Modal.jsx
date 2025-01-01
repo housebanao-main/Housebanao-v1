@@ -9,20 +9,34 @@ export const SCREENS = {
 
 export default function Modal() {
   const [bgColor, setBgColor] = useState("bg-opacity-10");
+  const [path, setPath] = useState(null);
   const { modal: { screen, visible } } = useSelector((state) => state.slice);
+  console.log(screen, visible);
+  
 
   useEffect(() => {
+    if(window.location.pathname!=="/interior-design"){
     if (visible) {
+      // console.log("VISIBLE", window);
+      
       document.body.style.height = `${window.innerHeight}px`;
       document.body.style.overflow = "hidden";
       setTimeout(() => {
         setBgColor("bg-opacity-60");
       }, 200);
     } else {
+      // console.log("ELSE VISIBLE", window);
+
       document.body.style.height = "";
       document.body.style.overflow = "";
       setBgColor("bg-opacity-10");
     }
+  }
+
+    setPath(window.location.pathname);
+
+  
+
   }, [visible]);
 
   return visible ? (
@@ -30,7 +44,7 @@ export default function Modal() {
       {(() => {
         switch (screen) {
           case SCREENS.LEAD_POPUP:
-            return <LeadForm />;
+            return path=="/interior-design"? null : <LeadForm />;
           default:
             return null;
         }
