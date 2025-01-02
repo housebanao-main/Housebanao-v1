@@ -14,6 +14,8 @@ import Professional from '../components/Professional';
 import Popup from '../components/Popup';
 import { usePopup } from '../context/PopupContext';
 import './globals.css'; // Corrected import statement
+import Promises from '../components/Promises';
+import PromiseCards from '../components/PromiseCards';
 // import { use } from 'react';
 
 export default function IndexPage() {
@@ -42,6 +44,10 @@ export default function IndexPage() {
       <section id="quickservices">
         <QuickService />
       </section>
+      <section id="promises">
+        <Promises/>
+        <PromiseCards/>
+        </section>
       <section id="whyus">
         <Description />
       </section>
