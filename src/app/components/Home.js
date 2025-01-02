@@ -20,7 +20,7 @@ export default function Home() {
 
         {/* Content */}
        
-        <Wrapper className={"relative z-10 w-full space-y-8 lg:space-y-0 lg:flex justify-between items-center  pt-12 sm:pt-24 md:pt-0 "}>
+        <Wrapper className={"relative z-10 w-full space-y-8 lg:space-y-0 flex flex-wrap-reverse justify-center lg:flex lg:justify-between items-center pb-10  pt-12 sm:pt-24 md:pt-0 "}>
   {/* Left Section: Hero Heading, Paragraph, and Feature Boxes */}
   <div className="flex flex-col w-full lg:w-1/2 text-left  lg:pt-24  ">
             {/* Hero Heading */}

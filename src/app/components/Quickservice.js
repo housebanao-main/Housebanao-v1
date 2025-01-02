@@ -14,7 +14,7 @@ const QuickService = () => {
         </h1>
       </div>
       {/* Services and View All Button in Same Line */}
-      <div className="flex justify-center items-center  gap-4 md:gap-8 lg:gap-12 xl:gap-16 2xl:gap-20 flex-wrap">
+      <div className="flex justify-between sm:justify-center items-center  gap-4 md:gap-8 lg:gap-12 xl:gap-16 2xl:gap-20 flex-wrap">
         {/* Service 1 */}
         <div className="flex flex-col items-center">
           <img
@@ -86,9 +86,9 @@ const QuickService = () => {
         </div>
 
         {/* View All Button */}
-        <div className="flex flex-col items-center">
+        <div className="hidden flex-col items-center ">
           <button
-            className="w-[130px] h-[130px] bg-[#E2E7F1] text-[#2A27E8] text-sm font-bold rounded-[14.72px] hover:bg-[#2A27E8] hover:text-white flex items-center justify-center"
+            className="w-[130px] h-[130px] bg-[#E2E7F1]  text-[#2A27E8] text-sm font-bold rounded-[14.72px] hover:bg-[#2A27E8] hover:text-white flex items-center justify-center"
             style={{
               padding: '18.41px 14.72px',
               gap: '14.72px',

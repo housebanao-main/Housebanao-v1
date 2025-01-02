@@ -44,11 +44,11 @@ const Description = () => {
       </div>
 
       {/* Boxes */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-4 gap-x-6 mt-4 sm:mt-10 xl:pl-[540px] xl:animate-columnShuffle">
+      <div className="grid grid-cols-1 items-center justify-center md:grid-cols-2 gap-y-4 gap-x-6 mt-4 sm:mt-10 xl:pl-[540px] xl:animate-columnShuffle">
         {shuffledBoxes.map((box, index) => (
           <div
             key={index}
-            className="flex items-center w-80 sm:w-[340px] h-[70px] bg-[#FFFFFF] rounded-[20px] shadow-md border-t border-gray-200 px-2 py-10   sm:gap-6 md:gap-10 relative hover:scale-105 hover:shadow-xl transition-transform duration-300 ease-in-out"
+            className="flex items-center w-80 sm:w-[340px] h-[70px] bg-[#FFFFFF] rounded-[20px] shadow-md border-t border-gray-200 px-2 py-10   sm:gap-6 md:gap-10 relative hover:scale-105 hover:shadow-xl transition-transform duration-300 ease-in-out mx-auto"
           >
             {/* Icon Background */}
             <div
