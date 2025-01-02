@@ -147,7 +147,7 @@ const RightForm = () => {
           </div>
           {successMessage && <p className="text-green-500 text-sm">{successMessage}</p>}
           {errorMessage && <p className="text-red-500 text-sm">{errorMessage}</p>}
-          <p className="w-[50%] sm:w-[60%] text-center mx-auto relative text-[12px] sm:text-sm text-white opacity-80">
+          <p className="w-[75%] sm:w-[60%] text-center mx-auto relative text-[9.5px] sm:text-sm text-white opacity-80 bottom-3">
             By submitting this form, you agree to the privacy policy and terms of use.
           </p>
         </div>
